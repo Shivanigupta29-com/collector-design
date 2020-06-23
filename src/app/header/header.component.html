@@ -1,0 +1,164 @@
+
+
+<div class="contant">
+
+	<nav class="navbar navbar-expand-lg navbar-light" style="background: white;">
+		<!-- <div class= "container-fluid"> -->
+		<div class="navbar-header">
+			<ul class="navbar-nav">
+				<i class="fa fa-chevron-left fa-0.2x" id="back"
+					aria-hidden="true"></i>
+				<li class="nav-item"><a class="nav-link" id="tempbrand" href="#"> Create New Template</a> </li>
+			</ul>
+		</div>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item"><a href="#">
+					<svg id= "undo-icon" xmlns="http://www.w3.org/2000/svg" width="37" height="30" viewBox="0 0 37 30"><defs><style>.a{fill:#fff;stroke:#e4e8ee;}.b{fill:#4a4a4a;}.c{stroke:none;}.d{fill:none;}</style></defs><g transform="translate(-1093 -130)"><g class="a" transform="translate(1093 130)"><rect class="c" width="37" height="30"/><rect class="d" x="0.5" y="0.5" width="36" height="29"/></g><path class="b" d="M10.605,11.961a8.284,8.284,0,0,0-5.467,2.061L2.25,11.25v6.966H9.415l-2.87-2.786a6.34,6.34,0,0,1,10.079,2.783l1.879-.537A8.331,8.331,0,0,0,10.605,11.961Z" transform="translate(1100.75 130.631)"/></g></svg>
+					</a></li>
+				<li class="nav-item"><a href="#">
+					<svg id="icons" xmlns="http://www.w3.org/2000/svg" width="37" height="30" viewBox="0 0 37 30"><defs><style>.a{fill:#fff;stroke:#e4e8ee;}.b{fill:#4a4a4a;}.c{stroke:none;}.d{fill:none;}</style></defs><g transform="translate(-1129 -130)"><g class="a" transform="translate(1129 130)"><rect class="c" width="37" height="30"/><rect class="d" x="0.5" y="0.5" width="36" height="29"/></g><path class="b" d="M10.148,11.961a8.284,8.284,0,0,1,5.468,2.061L18.5,11.25v6.966H11.338l2.87-2.786A6.34,6.34,0,0,0,4.129,18.212L2.25,17.675A8.331,8.331,0,0,1,10.148,11.961Z" transform="translate(1137.224 130.631)"/></g></svg>
+				</a>	
+				</li>
+				<li class="nav-item"> 
+					<button id="button-prev"><span id="pr">Preview</span></button>
+				<!-- <input id="button-prev" type="button" value="Preview"> -->
+				
+				</li>
+				<li class="nav-item"> 
+					<input id="button-succ" type="button" value="Save">
+				</li>
+			</ul>
+			<!-- </div> -->
+		</div>
+	</nav>
+
+	<!-- <div class="row title" style="margin-right:0;margin-left:0;">
+		<div class="col-md-4 title-item">
+			<p> HTML Code</p>
+		</div>
+		<div class="col-md-1 title-item">
+			<a class="color-change" href="#" role="button"> Add Tags </a>
+		</div>
+		<div class="col-md-1 title-item">
+			<a class="color-change" href="#" role="button"> Upload </a>
+		</div>
+		<div class="col-md-4 title-item">
+			<a class="color-change" href="#" role="button"> Email Preview </a>
+		</div>
+		<div class="col-md-2 title-item">
+			<a class="color-change" href="#" role="button"> Send Test E-Mail </a>
+		</div>
+
+	</div>
+	<div class="row">
+		<div class="col-lg-6">
+			<ngx-codemirror #editor [(ngModel)]="tmpData.codeMirrorTxtField" class="CodeMirrorClass"
+				[options]="codeMirrorOpts" [autoFocus]="true" (ngModelChange)="handleChange($event)">
+			</ngx-codemirror>
+		</div>
+		<div class="col-md-6">
+			<div [innerHTML]="tmpData.codeMirrorTxtField"> </div>
+
+		</div>
+
+	</div> -->
+
+	<div class="row" style="margin: 0;">
+
+		<div class="col-md-6">
+			<div class="row title" style="padding: 0;">
+				<div class="col-md-8 item" id= "html-code">
+					HTML Code
+				</div>
+				<div class="col-md-2 item" id="add-tags">
+					<a class="color-change" href="#" role="button"> Add Tags </a>
+				</div>
+				<div class="col-md-2 item" id= "upload">
+					<a class="color-change" href="#" role="button"> Upload </a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="row title" style="padding: 0;">
+				<div class="col-md-9 item" id= "Email">
+					<a class="color-change" href="#" role="button"> Email Preview </a>
+				</div>
+				<div class="col-md-3 item" id= "Test">
+					<a class="color-change" href="#" role="button"> Send Test E-Mail </a>
+				</div>
+			</div>
+		</div>
+		
+
+
+
+
+	</div>
+	<div class="row" style="margin: 0;">
+		<div class="col-lg-6" style="padding: 0;">
+			<ngx-codemirror #editor
+			 [(ngModel)]="tmpData.codeMirrorTxtField" 
+			 class="CodeMirrorClass"
+				[options]="codeMirrorOpts" 
+				[autoFocus]="true" 
+				(ngModelChange)="handleChange($event)">
+			</ngx-codemirror>
+		</div>
+		<div class="col-md-6" style="padding: 20px;">
+			<div [innerHTML]="tmpData.codeMirrorTxtField"> </div>
+
+		</div>
+
+	</div>
+</div>
+
+<!-- <div> Output {{tmpData.codeMirrorTxtField}} </div> -->
+
+<!--   (change)="onChange()"
+        (focusChange)="onFocus($event)"
+        (blur)="onBlur($event)"
+        (keyup)="onKeyup($event)"
+        (cursorActivity)="onCursorActivity($event)"
+        (click)="onClick($event)"
+ -->
+
+
+
+<!-- [disabled]="readOnly"
+        [autoFocus]="true"
+        (click) ="onClick($event)"
+		(ngModelChange)="handleChange($event)" -->
+<!-- </div> -->
+
+<!-- <div class= "container">
+		<div class= "text-center">
+			<h3> App Testing </h3>	
+			<h6> Hi, John Dee </h6>
+		
+			<p> Lorem Ipsum is simple dummy text of the printing and typseting industry </p>
+			<p> We are conducting a survey and your input would be appreciated. Open the link below and start the survey. Thakyou for our participation </p>
+			<button class="btn btn-success" type="button"> Take Survey </button>
+			<p> Please do not forward this mail to as its associated link is unique to you </p>
+			
+			<div> Share With: 
+				<a href="#"><i class="fa fa-facebook fa-0.2x" aria-hidden="true"></i>
+				 </a>
+				 <a  href="#"><i class="fa fa-twitter fa-0.2x"></i>
+				 </a>
+				  <a href="#"><i class="fa fa-google fa-0.2x" aria-hidden="true"></i>
+				 </a>
+				  <a href="#"><i class="fa fa-linkedin fa-0.2x"></i>
+				 </a>
+			</div>
+			
+			<img src="https://survey2connect.com/images/homepage/new_homepage/icons/white-logo-big.png" style= "width:10px;">
+		</div>
+
+		</div> -->
